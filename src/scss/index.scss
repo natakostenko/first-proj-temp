@@ -1,0 +1,39 @@
+@import "./components/products/product";
+@import "./components/products/product-list";
+
+@import "./components/layout/logo";
+@import "./components/cart/cart-header-btn";
+
+@import "./components/layout/header";
+@import "./components/layout/footer";
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+}
+
+.container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+
+
+
