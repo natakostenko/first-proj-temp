@@ -1,29 +1,41 @@
 {
-    "products": [
-      { 
-        "id": "1",
-        "title": "Jacket", 
-        "descr": "Black jacket",
-        "price": 1000,
-        "sale": null,
-        "img": "jacket" 
-      },
-      { 
-        "id": "2",
-        "title": "Joggers", 
-        "descr": "Grey joggers",
-        "price": 2000,
-        "sale": null,
-        "img": "joggers" 
-      },
-      { 
-        "id": "3",
-        "title": "Snickers", 
-        "descr": "White snickers",
-        "price": 3000,
-        "sale": null,
-        "img": "snickers" 
-      }
-    ],
-    "category": []
-  }
+  "products": [
+    {
+      "id": "1",
+      "title": "Jacket",
+      "descr": "Black jacket",
+      "price": 1000,
+      "sale": null,
+      "img": "jacket"
+    },
+    {
+      "id": "2",
+      "title": "Joggers",
+      "descr": "Grey joggers",
+      "price": 2000,
+      "sale": null,
+      "img": "joggers"
+    },
+    {
+      "id": "3",
+      "title": "Snickers",
+      "descr": "White snickers",
+      "price": 3000,
+      "sale": null,
+      "img": "snickers"
+    },
+    {
+      "id": "e1c8",
+      "title": "New pr",
+      "descr": "smth new",
+      "price": 25
+    },
+    {
+      "id": "a136",
+      "title": "wow",
+      "descr": "new wow",
+      "price": 5222
+    }
+  ],
+  "category": []
+}

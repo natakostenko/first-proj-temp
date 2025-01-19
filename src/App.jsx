@@ -1,10 +1,12 @@
+import { useState } from "react";
 import Header from "./components/layout/Header";
 import ProductsList from "./components/products/ProductsList";
 import Footer from "./components/layout/Footer";
-import { useState } from "react";
+import AdminBar from "./components/admin/AdminBar";
 
 const App = () => {
   const [cart, setCart] = useState([]);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   const addToCartHandler = (id) => {
     const isPresent = cart.includes(id);
@@ -22,7 +24,11 @@ const App = () => {
 
   return (
     <div className="container">
-      <Header cart={cart} />
+      <Header 
+        cart={cart} 
+        isAdmin={isAdmin}
+        setIsAdmin={setIsAdmin}
+      />
 
       <ProductsList
         cart={cart}
@@ -31,6 +37,11 @@ const App = () => {
       />
 
       <Footer />
+
+      {
+        isAdmin && <AdminBar />
+      }
+      
     </div>
   )
 }
