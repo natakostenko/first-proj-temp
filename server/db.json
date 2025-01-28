@@ -23,18 +23,6 @@
       "price": 3000,
       "sale": null,
       "img": "snickers"
-    },
-    {
-      "id": "e1c8",
-      "title": "New pr",
-      "descr": "smth new",
-      "price": 25
-    },
-    {
-      "id": "a136",
-      "title": "wow",
-      "descr": "new wow",
-      "price": 5222
     }
   ],
   "category": []
