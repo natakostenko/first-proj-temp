@@ -1,6 +1,12 @@
 import { useState } from "react";
+import { useAuthContext } from "../../context/auth/useAuthContext";
 
 const AdminBar = () => {
+    const context = useAuthContext();
+    const {user} = context.stateData;
+
+    if (!user) return null;
+
     const [title, setTitle] = useState("");
     const [descr, setDescr] = useState("");
     const [price, setPrice] = useState("");

@@ -6,7 +6,6 @@ import AdminBar from "./components/admin/AdminBar";
 
 const App = () => {
   const [cart, setCart] = useState([]);
-  const [isAdmin, setIsAdmin] = useState(false);
 
   const addToCartHandler = (id) => {
     const isPresent = cart.includes(id);
@@ -24,11 +23,8 @@ const App = () => {
 
   return (
     <div className="container">
-      <Header 
-        cart={cart} 
-        isAdmin={isAdmin}
-        setIsAdmin={setIsAdmin}
-      />
+
+      <Header cart={cart} />
 
       <ProductsList
         cart={cart}
@@ -38,10 +34,8 @@ const App = () => {
 
       <Footer />
 
-      {
-        isAdmin && <AdminBar />
-      }
-      
+      <AdminBar />
+
     </div>
   )
 }

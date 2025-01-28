@@ -1,4 +1,6 @@
 .product {
+  border: 1px solid silver;
+
   &__img {
     width: 220px;
     height: 280px;
@@ -6,10 +8,17 @@
   }
  
   &__info {
+    padding: 5px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     font-weight: bold;
+  }
+
+  &__add-favorite {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
   }
 }
   

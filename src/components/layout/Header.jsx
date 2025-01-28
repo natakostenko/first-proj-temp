@@ -3,15 +3,12 @@ import CartHeaderBtn from "../cart/CartHeaderBtn";
 import UserAuth from "../auth/UserAuth";
 
 const Header = (props) => {
-    const { cart, isAdmin, setIsAdmin } = props;
+    const { cart } = props;
 
     return (
         <header>
             <Logo />
-            <UserAuth
-                isAdmin={isAdmin}
-                setIsAdmin={setIsAdmin}
-            />
+            <UserAuth />
             <CartHeaderBtn data={cart} />
         </header>
     );

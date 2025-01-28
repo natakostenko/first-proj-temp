@@ -6,7 +6,8 @@
       "descr": "Black jacket",
       "price": 1000,
       "sale": null,
-      "img": "jacket"
+      "img": "jacket",
+      "isFavorite": false
     },
     {
       "id": "2",
@@ -14,7 +15,8 @@
       "descr": "Grey joggers",
       "price": 2000,
       "sale": null,
-      "img": "joggers"
+      "img": "joggers",
+      "isFavorite": false
     },
     {
       "id": "3",
@@ -22,7 +24,8 @@
       "descr": "White snickers",
       "price": 3000,
       "sale": null,
-      "img": "snickers"
+      "img": "snickers",
+      "isFavorite": true
     }
   ],
   "category": []

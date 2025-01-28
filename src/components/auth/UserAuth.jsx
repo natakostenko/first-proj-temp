@@ -1,12 +1,16 @@
-const UserAuth = (props) => {
-    const {isAdmin, setIsAdmin} = props;
+import { AuthContext } from "../../context/auth/AuthProvider";
+import { useAuthContext } from "../../context/auth/useAuthContext";
 
-    const textBtn = isAdmin ? 'Logout' : 'Login';
+const UserAuth = () => {
+    const { stateData } = useAuthContext();
+    const { user, setUser } = stateData;
+
+    const textBtn = user ? 'Logout' : 'Login';
 
     return (
         <button 
             className="auth-btn"
-            onClick={() => setIsAdmin(prev => !prev)}
+            onClick={() => setUser(prev => !prev)}
         >
             {textBtn}
         </button>

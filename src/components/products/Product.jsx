@@ -1,8 +1,9 @@
 import AddToCartBtn from "../cart/AddToCartBtn/AddToCartBtn";
+import Favorite from "./Favorite";
 
 const Product = (props) => {
     const { data, cart, addToCartHandler, removeFromCartHandler } = props;
-    const { id, title, descr, price, sale, img } = data;
+    const { id, title, descr, price, img, isFavorite } = data;
     return (
         <div key={id} className="product">
             <h3 className="product__title">{title}</h3>
@@ -10,12 +11,18 @@ const Product = (props) => {
             <p className="product__descr">{descr}</p>
             <p className="product__price">{price}</p>
 
-            <AddToCartBtn
-                id={id}
-                cart={cart}
-                addToCartHandler={addToCartHandler}
-                removeFromCartHandler={removeFromCartHandler}
-            />
+            <div className="product__add-favorite">
+                <AddToCartBtn
+                    id={id}
+                    cart={cart}
+                    addToCartHandler={addToCartHandler}
+                    removeFromCartHandler={removeFromCartHandler}
+                />
+                <Favorite
+                    id={id}
+                    isFavorite={isFavorite}
+                />
+            </div>
         </div>
     );
 }
