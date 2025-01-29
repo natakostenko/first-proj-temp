@@ -1,5 +1,7 @@
-{
-  "products": [
+// ???
+
+
+export const products = [
     {
       "id": "1",
       "title": "Jacket",
@@ -7,7 +9,7 @@
       "price": 1000,
       "sale": null,
       "img": "jacket",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "2",
@@ -16,7 +18,7 @@
       "price": 2000,
       "sale": null,
       "img": "joggers",
-      "isFavorite": false
+      "isFavorite": true
     },
     {
       "id": "3",
@@ -25,8 +27,6 @@
       "price": 3000,
       "sale": null,
       "img": "snickers",
-      "isFavorite": false
+      "isFavorite": true
     }
-  ],
-  "category": []
-}
+]

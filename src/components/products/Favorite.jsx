@@ -1,4 +1,3 @@
-import { useEffect } from 'react';
 import { config } from '../../../config';
 
 const Favorite = (props) => {
@@ -9,6 +8,7 @@ const Favorite = (props) => {
     const isFavoriteImg = isFavorite
         ? "images/icons/is-favorite.png"
         : "images/icons/not-is-favorite.png";
+
 
     const toggleFavoriteProduct = async (id, isFavorite) => {
 
@@ -23,7 +23,6 @@ const Favorite = (props) => {
         })
         const result = await response.json();
 
-        console.log(result);
     }
 
     return (

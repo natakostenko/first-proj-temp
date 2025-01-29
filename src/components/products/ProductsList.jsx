@@ -14,9 +14,8 @@ const ProductsList = (props) => {
             const data = await res.json();
             setData(data);
         })();
-
-    }, []);
-
+    }, [data]);
+    
     return (
         <div className="products">
 
