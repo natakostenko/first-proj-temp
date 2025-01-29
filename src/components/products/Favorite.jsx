@@ -1,7 +1,17 @@
 import { config } from '../../../config';
+import { useAuthContext } from '../../context/auth/useAuthContext';
 
 const Favorite = (props) => {
     const { id, isFavorite } = props;
+
+    const context = useAuthContext();
+    const { user } = context.stateData;
+
+    if (!user) return (
+        <img src={"images/icons/not-is-favorite.png"} alt=""
+            className="favorite-img"
+        />
+    );
 
     const { baseUrl, resources } = config;
 
